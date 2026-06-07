@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Clínica Médica UX</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <i data-lucide="plus-square" class="logo-icon"></i>
+                <span>Clínica<span>Médica UX</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Agendamento</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="auth-section section-padding">
+            <div class="container">
+                <div class="auth-card">
+                    <div class="section-header">
+                        <h2>Crie sua conta</h2>
+                        <p>Preencha os dados abaixo para se cadastrar e começar a agendar consultas.</p>
+                    </div>
+                    <form id="signupForm" class="auth-form">
+                        <div class="form-group">
+                            <label>Nome completo</label>
+                            <input id="signupName" type="text" placeholder="Digite seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label>E-mail</label>
+                            <input id="signupEmail" type="email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Telefone</label>
+                            <input id="signupPhone" type="tel" placeholder="(41) 99999-9999" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Data de nascimento</label>
+                            <input id="signupBirth" type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Senha</label>
+                            <input id="signupPassword" type="password" placeholder="Crie uma senha" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Confirmar senha</label>
+                            <input id="signupPasswordConfirm" type="password" placeholder="Repita a senha" required>
+                        </div>
+                        <button type="submit" class="btn-primary w-full">Cadastrar</button>
+                        <p class="form-footer">Já tem conta? <a href="index.html">Entrar</a></p>
+                    </form>
+                    <div id="signupSuccessMsg" class="login-success-message" style="display:none;">
+                        Cadastro realizado com sucesso! Redirecionando para a página inicial...
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

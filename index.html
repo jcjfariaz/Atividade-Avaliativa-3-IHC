@@ -1,0 +1,296 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Médica UX</title>
+    <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+   
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <i data-lucide="plus-square" class="logo-icon"></i>
+                <span>Clínica<span>Médica UX</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="dashboard.html">Agendamento</a></li>
+                <li><a href="about.html">Sobre</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-login" id="openLogin">
+                    <i data-lucide="user"></i>
+                    Entrar
+                </button>
+            </div>
+            <button class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+    <main>
+        
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <span class="badge">Cuidado de alta performance</span>
+                    <h1>Sua saúde merece o <span>melhor atendimento</span> digital e tecnológico.</h1>
+                    <p>Agende consultas com os melhores especialistas de forma rápida, segura e humanizada. Tecnologia a serviço da sua vida.</p>
+                    <div class="hero-btns">
+                        <a href="#agendamento" class="btn-primary">Agendar Agora</a>
+                        <a href="#especialidades" class="btn-secondary">Ver Especialidades</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <strong>50+</strong>
+                            <span>Especialistas</span>
+                        </div>
+                        <div class="stat-item">
+                            <strong>15k+</strong>
+                            <span>Pacientes</span>
+                        </div>
+                        <div class="stat-item">
+                            <strong>4.9/5</strong>
+                            <span>Avaliação</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800" alt="Médico sorrindo">
+                        <div class="floating-card card-1">
+                            <i data-lucide="check-circle"></i>
+                            <span>Check-up em dia</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i data-lucide="calendar"></i>
+                            <span>Próxima consulta: Amanhã</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+       <section id="especialidades" class="section-padding">
+    <div class="container">
+        <div class="section-header">
+            <h2>Nossas Especialidades</h2>
+            <p>Oferecemos um atendimento multidisciplinar para cuidar de você por inteiro.</p>
+        </div>
+        <div class="specialties-grid">
+            <!-- 1. Cardiologia -->
+            <div class="specialty-card">
+                <div class="card-icon"><i data-lucide="heart"></i></div>
+                <h3>Cardiologia</h3>
+                <p>Cuidado especializado com o coração e sistema circulatório.</p>
+                <a href="cardiologia.html" class="learn-more">Saiba mais <i data-lucide="arrow-right"></i></a>
+            </div>
+
+            <!-- 2. Neurologia -->
+            <div class="specialty-card">
+                <div class="card-icon"><i data-lucide="brain"></i></div>
+                <h3>Neurologia</h3>
+                <p>Tratamento avançado para distúrbios do sistema nervoso.</p>
+                <a href="neurologia.html" class="learn-more">Saiba mais <i data-lucide="arrow-right"></i></a>
+            </div>
+
+            <!-- 3. Ortopedia -->
+            <div class="specialty-card">
+                <div class="card-icon"><i data-lucide="activity"></i></div>
+                <h3>Ortopedia</h3>
+                <p>Foco na saúde dos ossos, articulações e sistema locomotor.</p>
+                <a href="ortopedia.html" class="learn-more">Saiba mais <i data-lucide="arrow-right"></i></a>
+            </div>
+
+            <!-- 4. Pediatria -->
+            <div class="specialty-card">
+                <div class="card-icon"><i data-lucide="baby"></i></div>
+                <h3>Pediatria</h3>
+                <p>Atendimento dedicado e carinhoso para os pequenos.</p>
+                <a href="pediatria.html" class="learn-more">Saiba mais <i data-lucide="arrow-right"></i></a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+           <section id="agendamento" class="section-padding bg-light">
+            <div class="container">
+                <div class="booking-wrapper">
+                    <div class="booking-sidebar">
+                        <div class="sidebar-header">
+                            <h3>Área do Paciente</h3>
+                        </div>
+                        <div class="sidebar-menu">
+                            <button class="menu-item active" data-tab="search">
+                                <i data-lucide="search"></i> Buscar Médicos
+                            </button>
+                        </div>
+                    </div>
+                    <div class="booking-content">
+                        
+                        <div id="tab-search" class="tab-pane active">
+                            <div class="search-bar">
+                                <input type="text" placeholder="Pesquisar por nome ou especialidade...">
+                                <button class="btn-search"><i data-lucide="search"></i></button>
+                        </div>
+                        <div class="booking-form">
+                            <div class="form-group">
+                                <label for="appointmentDate">Data da consulta</label>
+                                <input type="date" id="appointmentDate">
+                            </div>
+                            <div class="form-group">
+                                <label for="appointmentTime">Hora</label>
+                                <input type="time" id="appointmentTime">
+                            </div>
+                        </div>
+                        <div class="doctor-list">
+    
+    <div class="doctor-card">
+        <div class="doc-placeholder">
+            <i data-lucide="user"></i>
+        </div>
+        <div class="doc-info">
+            <h4>Dr. Kaue</h4>
+            <span>Cardiologista</span>
+            <p><i data-lucide="star"></i> 5.0 (120 avaliações)</p>
+        </div>
+        <button class="btn-book">Agendar</button>
+    </div>
+
+        <div class="doctor-card">
+        <div class="doc-placeholder">
+            <i data-lucide="user"></i>
+        </div>
+        <div class="doc-info">
+            <h4>Dra. Isabel</h4>
+            <span>Pediatra</span>
+            <p><i data-lucide="star"></i> 5.0 (85 avaliações)</p>
+        </div>
+        <button class="btn-book">Agendar</button>
+    </div>
+
+        <div class="doctor-card">
+        <div class="doc-placeholder">
+            <i data-lucide="user"></i>
+        </div>
+        <div class="doc-info">
+            <h4>Dr. Farias</h4>
+            <span>Ortopedista</span>
+            <p><i data-lucide="star"></i> 5.0 (62 avaliações)</p>
+        </div>
+        <button class="btn-book">Agendar</button>
+    </div>
+
+        <div class="doctor-card">
+        <div class="doc-placeholder">
+            <i data-lucide="user"></i>
+        </div>
+        <div class="doc-info">
+            <h4>Dra. Ana</h4>
+            <span>Neurologista</span>
+            <p><i data-lucide="star"></i> 5.0 (45 avaliações)</p>
+        </div>
+        <button class="btn-book">Agendar</button>
+    </div>
+</div>
+                        <div id="tab-scheduled" class="tab-pane">
+                            <h3>Próximas Consultas</h3>
+                            <div class="empty-state" id="emptyState">
+                                <i data-lucide="calendar-x"></i>
+                                <p>Você não possui consultas agendadas no momento.</p>
+                            </div>
+                            <div class="scheduled-list" id="scheduledList"></div>
+                        </div>
+                        
+                        <div id="tab-history" class="tab-pane">
+                            <h3>Histórico de Consultas</h3>
+                            <div class="history-list">
+                                <div class="history-item">
+                                    <div class="history-date">12 Mai 2026 - 14:30</div>
+                                    <div class="history-doc">Dr. Ricardo Silva (Cardiologia)</div>
+                                    <div class="history-status status-done">Concluída</div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-date">05 Abr 2026 - 11:00</div>
+                                    <div class="history-doc">Dra. Ana Oliveira (Pediatria)</div>
+                                    <div class="history-status status-done">Concluída</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i data-lucide="plus-square" class="logo-icon"></i>
+                    <span>Clínica<span>UX</span></span>
+                </div>
+                <p>Cuidando da sua saúde com tecnologia.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="about.html">Sobre Nós</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="blog.html">Blog da Saúde</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p><i data-lucide="phone"></i> (41) 4003-1234</p>
+                <p><i data-lucide="mail"></i> contato@clinicaux.com.br</p>
+                <p><i data-lucide="map-pin"></i>Curitiba, Paraná</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span class="footer-academic">Projeto Acadêmico</span> UX/IHC.</p>
+        </div>
+    </footer>
+
+    
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Bem-vindo de volta</h2>
+            <p>Acesse sua conta para gerenciar suas consultas.</p>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="seu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Senha</label>
+                    <input type="password" placeholder="********" required>
+                </div>
+                <button type="submit" class="btn-primary w-full">Entrar</button>
+                <p class="form-footer">Não tem conta? <a href="signup.html">Cadastre-se</a></p>
+            </form>
+            <div id="loginSuccessMsg" class="login-success-message" style="display:none;">
+                <span class="login-success-text"></span>
+                <button id="loginSuccessOk" type="button" class="btn-ok">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        
+        lucide.createIcons();
+    </script>
+</body>
+</html>

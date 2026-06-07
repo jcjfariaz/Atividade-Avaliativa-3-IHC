@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Médica UX | Consultas Agendadas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo"><i data-lucide="plus-square"></i><span>Clínica<span>Médica UX</span></span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#especialidades">Especialidades</a></li>
+                <li><a href="dashboard.html" class="active">Agendamento</a></li>
+                <li><a href="about.html">Sobre</a></li>
+            </ul>
+            <div class="nav-actions"><a href="index.html" class="btn-login"><i data-lucide="user"></i> Entrar</a></div>
+        </div>
+    </nav>
+    <main>
+        <section class="hero-specialty section-padding">
+            <div class="container">
+                <h1 class="specialty-title">Consultas Agendadas</h1>
+                <p class="specialty-description">Aqui você vê suas consultas marcadas e pode acompanhar o status de cada encontro médico.</p>
+            </div>
+        </section>
+        <section class="section-padding bg-light">
+            <div class="container">
+                <div class="details-content">
+                    <h3>Próximas Consultas</h3>
+                    <div class="appointment-card">
+                        <h4>Dr. Kaue</h4>
+                        <span>Cardiologia</span>
+                        <p>Quarta-feira, 05 de Junho de 2026 - 14:30</p>
+                        <p>Status: <strong>Confirmada</strong></p>
+                    </div>
+                    <div class="appointment-card">
+                        <h4>Dra. Ana</h4>
+                        <span>Neurologia</span>
+                        <p>Sexta-feira, 14 de Junho de 2026 - 09:00</p>
+                        <p>Status: <strong>Confirmada</strong></p>
+                    </div>
+                    <h3 class="section-title">Histórico</h3>
+                    <div class="appointment-card">
+                        <h4>Dra. Isabel</h4>
+                        <span>Pediatria</span>
+                        <p>Quinta-feira, 22 de Maio de 2026 - 11:00</p>
+                        <p>Status: <strong>Concluída</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
