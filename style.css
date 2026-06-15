@@ -914,11 +914,12 @@ a {
 
 }
 
-/*Alteração*/
+/*Alteração que foi pedida pelo Professor Diego!*/
 .sidebar-card h4 {
-    /* Isso cria um afastamento para baixo do texto "Agende sua Consulta", 
-       empurrando o botão para baixo */
-    margin-bottom: 25px; 
+/* Isso cria um afastamento para baixo do texto "Agende sua Consulta", 
+empurrando o botão para baixo */
+    margin-bottom: 15px;
+    margin-top: 15px; 
 }
 
 /*Reduz o espaço invisível na parte de baixo do cabeçalho*/
@@ -928,5 +929,10 @@ a {
 
 /*Reduz o espaço invisível na parte de cima da seção de conteúdo*/
 .hero-specialty + .section-padding {
-    padding-top: 5px !important; 
+    padding-top: 10px!important;
+}
+
+/*Aumeta o espaço entre as informações de cada uma categoria*/
+.details-content ul h3 {
+    margin-top: 10px !important;
 }
